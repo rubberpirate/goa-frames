@@ -262,7 +262,7 @@ export default function Dock({ data, input, onInput, onReroll, onFile }: Props) 
         isOpen={showShareModal}
         onClose={() => setShowShareModal(false)}
         onCopyImage={() => copyCardToClipboard(data)}
-        onReopenX={() => reopenX(data, lastShareUrl)}
+        onReopenX={() => reopenX(data)}
         shareUrl={lastShareUrl}
       />
     </div>

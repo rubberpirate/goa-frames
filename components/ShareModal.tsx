@@ -82,55 +82,40 @@ export default function ShareModal({
 
         {/* Steps Guide */}
         <div className="space-y-3 my-5 font-mono text-xs">
-          {/* Step 1: Clipboard */}
-          <div className="flex items-start gap-3 rounded-xl border border-hh-yellow/40 bg-hh-yellow/10 p-3.5">
-            <div className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-hh-yellow text-hh-ink font-bold text-xs">
-              1
+          {/* Step 1: Clipboard Paste */}
+          <div className="flex items-start gap-3 rounded-xl border border-hh-yellow/40 bg-hh-yellow/10 p-4">
+            <div className="mt-0.5 grid size-7 shrink-0 place-items-center rounded-full bg-hh-yellow text-hh-ink font-bold text-sm">
+              ✨
             </div>
             <div>
-              <p className="font-bold text-hh-yellow text-[13px]">
-                Paste Card Image (Ctrl+V / Cmd+V)
+              <p className="font-bold text-hh-yellow text-[14px]">
+                Paste Image directly into Twitter
               </p>
-              <p className="text-hh-cream/80 mt-1 leading-relaxed text-[11px]">
-                Your high-res pass is copied to your clipboard! In the X composer window, press{' '}
-                <kbd className="px-1.5 py-0.5 bg-black/40 rounded border border-hh-cream/30 text-white font-mono text-[10px]">
-                  Ctrl+V
+              <p className="text-hh-cream/90 mt-1 leading-relaxed text-[12px]">
+                Your pass image was automatically copied to your clipboard! In your open Twitter tab, simply press{' '}
+                <kbd className="px-2 py-0.5 bg-black/60 rounded border border-hh-cream/40 text-white font-mono font-bold text-[11px]">
+                  Ctrl + V
                 </kbd>{' '}
                 (or{' '}
-                <kbd className="px-1.5 py-0.5 bg-black/40 rounded border border-hh-cream/30 text-white font-mono text-[10px]">
-                  Cmd+V
+                <kbd className="px-2 py-0.5 bg-black/60 rounded border border-hh-cream/40 text-white font-mono font-bold text-[11px]">
+                  Cmd + V
                 </kbd>
-                ) to attach the card image directly.
+                ) to attach the pass image directly into the post!
               </p>
             </div>
           </div>
 
-          {/* Step 2: Link Preview */}
+          {/* Step 2: Drag & Drop from Downloads */}
           <div className="flex items-start gap-3 rounded-xl border border-hh-cream/15 bg-white/5 p-3.5">
             <div className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-hh-cream/20 text-hh-cream font-bold text-xs">
-              2
+              📁
             </div>
             <div>
               <p className="font-bold text-hh-cream text-[13px]">
-                Live Card Link Preview
+                Backup: Drag & Drop from Downloads
               </p>
               <p className="text-hh-cream/70 mt-1 leading-relaxed text-[11px]">
-                The tweet also carries your unique link that will unfurl the official 1200×630 boarding pass graphic.
-              </p>
-            </div>
-          </div>
-
-          {/* Step 3: Backup Download */}
-          <div className="flex items-start gap-3 rounded-xl border border-hh-cream/15 bg-white/5 p-3.5">
-            <div className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-hh-cream/20 text-hh-cream font-bold text-xs">
-              3
-            </div>
-            <div>
-              <p className="font-bold text-hh-cream text-[13px]">
-                Saved to Downloads
-              </p>
-              <p className="text-hh-cream/70 mt-1 leading-relaxed text-[11px]">
-                The PNG pass file is also saved to your downloads as a backup. You can drag and drop it into X if preferred.
+                The high-res pass PNG was also saved to your downloads folder. You can drag and drop it straight into Twitter&apos;s composer.
               </p>
             </div>
           </div>
